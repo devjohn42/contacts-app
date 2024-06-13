@@ -61,6 +61,7 @@ module.exports = {
       },
     ],
     'no-use-before-define': 'off',
+    'no-unused-vars': 'false',
     'prettier/prettier': 'error',
     'func-names': 'off',
     'react/style-prop-object': 'off',

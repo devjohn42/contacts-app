@@ -1,6 +1,8 @@
-import { Text, View } from 'react-native';
+import { StatusBar } from 'react-native';
 import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
 import Loading from '@/global/Loading';
+
+import Home from '@/views/Home';
 import { theme } from '@/global/theme';
 
 export default function App() {
@@ -13,8 +15,9 @@ export default function App() {
     return <Loading />;
   }
   return (
-    <View>
-      <Text style={{ fontFamily: theme.fontFamily.bold }}>Contacts</Text>
-    </View>
+    <>
+      <StatusBar barStyle="light-content" backgroundColor={theme.colors.secondary} />
+      <Home />
+    </>
   );
 }

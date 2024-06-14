@@ -1,4 +1,5 @@
 import { theme } from '@/global/theme';
+import { TextInput, TextInputProps } from 'react-native';
 import { RFValue } from 'react-native-responsive-fontsize';
 import styled from 'styled-components/native';
 

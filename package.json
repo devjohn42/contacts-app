@@ -13,6 +13,7 @@
     "@expo/metro-runtime": "~3.2.1",
     "@types/styled-components-react-native": "^5.2.5",
     "expo": "~51.0.14",
+    "expo-contacts": "^13.0.4",
     "expo-status-bar": "~1.12.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",

@@ -5,8 +5,8 @@ export const Container = styled.View`
   margin-top: -30px;
   flex-direction: row;
   align-items: center;
-  padding: 12px;
-  gap: 0;
+  padding: 16px;
+  gap: 0px;
 `;
 
 export const Input = styled.View`
@@ -17,6 +17,6 @@ export const Input = styled.View`
   flex-direction: row;
   align-items: center;
   padding: 10px;
-  gap: 7;
+  gap: 5px;
   elevation: 10;
 `;

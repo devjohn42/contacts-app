@@ -4,6 +4,7 @@ import Researcher from './components/Researcher';
 import TextInputContainer from './components/TextInputField';
 import { theme } from '@/global/theme';
 import { Feather } from '@expo/vector-icons';
+import Contact from './components/Contact';
 
 export default function Home() {
   const [name, setName] = useState('');
@@ -22,6 +23,8 @@ export default function Home() {
         />
         <Feather name="x" size={16} color={theme.colors.secondary} onPress={() => setName('')} />
       </Researcher>
+
+      <Contact contact={{ name: 'Alice Telles Ribeiro', image: null }} />
     </Container>
   );
 }

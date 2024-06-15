@@ -7,6 +7,7 @@ import { Feather } from '@expo/vector-icons';
 import * as Contacts from 'expo-contacts';
 import Contact, { ContactDataProps } from './components/Contact';
 import { Alert, SectionList } from 'react-native';
+import SectionHeader from './components/SectionHeader';
 
 type SectionListProps = {
   title: string;
@@ -85,6 +86,7 @@ export default function Home() {
         sections={contacts}
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => <Contact contact={item} />}
+        renderSectionHeader={({ section }) => <SectionHeader title={section.title} />}
         showsVerticalScrollIndicator={false}
       />
     </Container>

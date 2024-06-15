@@ -65,7 +65,7 @@ export default function Home() {
 
   useEffect(() => {
     fetchContacts();
-  }, []);
+  }, [name]);
   return (
     <Container>
       <Header>

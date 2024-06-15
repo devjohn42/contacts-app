@@ -18,5 +18,5 @@ export const Input = styled.View`
   align-items: center;
   padding: 10px;
   gap: 5px;
-  elevation: 10;
+  elevation: 8;
 `;

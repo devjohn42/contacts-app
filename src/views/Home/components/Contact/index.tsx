@@ -5,20 +5,21 @@ import { ImageProps, View } from 'react-native';
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
 import { theme } from '@/global/theme';
 
-type Props = {
+export type ContactDataProps = {
+  id: string;
   name: string;
   image?: ImageProps | null;
 };
 
 interface ContactProps {
-  contact: Props;
+  contact: ContactDataProps;
 }
 
 export default function Contact({ contact, ...rest }: ContactProps) {
   return (
     <Container>
       <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-        <Avatar name="Alice Telles Ribeiro" image={contact.image} />
+        <Avatar name={contact.name} image={contact.image} key={contact.id} />
         <Name>{contact.name}</Name>
       </View>
       <MaterialIcons name="keyboard-arrow-right" size={20} color={theme.colors.secondary} />

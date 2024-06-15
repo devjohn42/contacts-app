@@ -7,9 +7,9 @@ export const Container = styled(TouchableOpacity)`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #ceceef;
-  padding: 0px 16px;
-  margin-top: 20px;
+  /* background-color: #ceceef; */
+  padding: 0px 24px;
+  margin-top: 10px;
 `;
 
 export const Name = styled.Text`

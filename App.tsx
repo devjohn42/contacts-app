@@ -1,4 +1,5 @@
 import { StatusBar } from 'react-native';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { useFonts, Roboto_400Regular, Roboto_700Bold } from '@expo-google-fonts/roboto';
 import Loading from '@/global/Loading';
 
@@ -15,9 +16,9 @@ export default function App() {
     return <Loading />;
   }
   return (
-    <>
+    <GestureHandlerRootView style={{ flex: 1 }}>
       <StatusBar barStyle="light-content" backgroundColor={theme.colors.secondary} />
       <Home />
-    </>
+    </GestureHandlerRootView>
   );
 }

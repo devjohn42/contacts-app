@@ -13,11 +13,12 @@ export type ContactDataProps = {
 
 interface ContactProps {
   contact: ContactDataProps;
+  onPress: () => void;
 }
 
-export default function Contact({ contact, ...rest }: ContactProps) {
+export default function Contact({ contact, onPress, ...rest }: ContactProps) {
   return (
-    <Container>
+    <Container onPress={onPress}>
       <View style={{ flexDirection: 'row', alignItems: 'center' }}>
         <Avatar name={contact.name} image={contact.image} key={contact.id} />
         <Name>{contact.name}</Name>

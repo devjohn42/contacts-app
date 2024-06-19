@@ -3,4 +3,5 @@ export const colors = {
   secondary: '#02000E',
   secondary_light: 'rgba(2, 0, 14, 0.4)',
   shape: '#E3EDF7',
+  details: '#CECEEF',
 };
